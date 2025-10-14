@@ -1,0 +1,76 @@
+3- Veja o uso do operador % abaixo:
+
+int i;
+
+for(i = 0; i < 10; i++){
+    int resto = i % 4; 
+    Serial.print("Resto da Divisão: ");
+    Serial.println(resto);
+    delay(100);
+}
+ 
+ a- int i 
+    for(i = 0; i < 3; i++){
+    int resto = i % 3; 
+    Serial.print("Resto da Divisão: ");
+    Serial.println(resto);
+    delay(100);
+    }
+
+ b- int i;
+
+    void setup() {
+        Serial.begin(9600);
+        pinMode(2, OUTPUT);
+        pinMode(3, OUTPUT);
+        pinMode(4, OUTPUT);
+      }
+
+    void loop() {
+        for (i = 0; i < 10; i++) {
+           int resto = i % 3;
+
+           Serial.print("Resto da divisão: ");
+           Serial.println(resto);
+
+           digitalWrite(2, LOW);
+           digitalWrite(3, LOW);
+           digitalWrite(4, LOW);
+
+           if (resto == 0) digitalWrite(2, HIGH);
+           if (resto == 1) digitalWrite(3, HIGH);
+           if (resto == 2) digitalWrite(4, HIGH);
+
+           delay(1000);
+        }
+      }
+
+      c- int i;
+
+      void setup() {
+        Serial.begin(9600);
+        pinMode(2, OUTPUT);
+        pinMode(3, OUTPUT);
+        pinMode(4, OUTPUT);
+      }
+
+      void loop() {
+        for (i = 0; i < 10; i++) {
+          int resto = i % 3;
+
+          Serial.print("Resto da divisão: ");
+          Serial.println(resto);
+
+          digitalWrite(2, LOW);
+          digitalWrite(3, LOW);
+          digitalWrite(4, LOW);
+
+          if (resto == 0) digitalWrite(2, HIGH);
+          if (resto == 1) digitalWrite(3, HIGH);
+          if (resto == 2) digitalWrite(4, HIGH);
+
+          delay(1000);
+        }
+
+        while (true);
+      }

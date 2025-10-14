@@ -1,0 +1,44 @@
+1- O comando abaixo imprime os valores de 0 até o 10
+
+int i;
+
+for(i = 0; i < 10; i++){
+    Serial.print("Valor: ");
+    Serial.println(i)
+    delay(100);
+
+}
+ 
+ 
+a-  int i;
+
+    for(i = 0; i <= 2; i++){
+    Serial.print("Valor: ");
+    Serial.println(i)
+    delay(100);
+}
+   
+   
+b- int i;
+
+    for(i = 1; i < 10; i++){
+    Serial.print("Valor: ");
+    Serial.println(i)
+    delay(100);
+}
+
+c- int i;
+
+  for (i = 0; i < 10; i += 2) {
+  Serial.print("Valor: ");
+  Serial.println(i);
+  delay(1000);
+ }
+
+ d- int i;
+
+   for (i = 10; i >= 0; i--) {
+   Serial.print("Valor: ");
+   Serial.println(i);
+   delay(1000);
+    }
